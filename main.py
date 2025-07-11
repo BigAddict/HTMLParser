@@ -58,4 +58,4 @@ async def parse_html(payload: HTMLPayload):
 
 # Optional for manual run
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8081)
+    uvicorn.run(app, host="0.0.0.0", port=8081)
