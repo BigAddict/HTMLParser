@@ -1,0 +1,12 @@
+[Unit]
+Description=Local GitHub Post Parser API
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/HTMLParser
+ExecStart=/home/ubuntu/HTMLParser/.venv/bin/python /home/ubuntu/HTMLParser/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
